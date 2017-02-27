@@ -1,4 +1,4 @@
 library(readr)
-labour_force <- read_csv("http://data.stats.gov.my/download_bptms.php?cat=1&id=34")
-View(labour_force)
 download.file("http://data.stats.gov.my/download_bptms.php?cat=1&id=34", destfile="./labourforce.csv", "auto")
+labour_force <- read_csv("./labourforce.csv")
+View(labour_force)
